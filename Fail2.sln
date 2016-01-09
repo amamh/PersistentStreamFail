@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{966FC99B-67F6-4E14-ADAB-DACF4C8BD175}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silo", "Silo\Silo.csproj", "{55A64921-452E-4CE0-94F4-C9467DF287D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "Producer\Producer.csproj", "{96474B11-F3AD-45FF-B323-C66824F6EEF9}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{966FC99B-67F6-4E14-ADAB-DACF4C8BD175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{966FC99B-67F6-4E14-ADAB-DACF4C8BD175}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{966FC99B-67F6-4E14-ADAB-DACF4C8BD175}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{966FC99B-67F6-4E14-ADAB-DACF4C8BD175}.Release|Any CPU.Build.0 = Release|Any CPU
 		{55A64921-452E-4CE0-94F4-C9467DF287D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55A64921-452E-4CE0-94F4-C9467DF287D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55A64921-452E-4CE0-94F4-C9467DF287D0}.Release|Any CPU.ActiveCfg = Release|Any CPU

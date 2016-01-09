@@ -1,5 +1,4 @@
-﻿using Entities;
-using Orleans;
+﻿using Orleans;
 using Orleans.Streams;
 using System;
 using System.Collections.Generic;
@@ -33,21 +32,10 @@ namespace Producer
 
         private static async void Run()
         {
-            //var repository = new PriceRepository();
-            //await Task.Run(() => repository.Start());
-
-
-            var msg = new Price();
-            msg.Ask = 19.382709503173828;
-            msg.Mid = 19.372562408447266;
-            msg.Bid = 19.377635955810547;
-            msg.RIC = "IDUS.L";
-
-            // this will stream the prices internally
             IStreamProvider streamProvider = GrainClient.GetStreamProvider("PSProvider");
             var streamId = new Guid("00000000-0000-0000-0000-000000000000");
-            var stream = streamProvider.GetStream<IPrice>(streamId, "Price");
-            await stream.OnNextAsync(msg);
+            var stream = streamProvider.GetStream<int>(streamId, "Price");
+            await stream.OnNextAsync(0);
 
             Console.ReadLine();
         }
